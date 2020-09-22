@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="landscape" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 800 600" style="enable-background:new 0 0 800 600;" xml:space="preserve" preserveAspectRatio="none">
+<style type="text/css">
+	.st0{fill:#F6F6F9;}
+	.st1{fill:none;stroke:#C0C0C8;stroke-width:10;stroke-miterlimit:10;}
+</style>
+<rect id="background" x="5" y="5" class="st0" width="790" height="590"/>
+<rect id="frame-rectangle" x="5" y="5" class="st1" width="790" height="590"/>
+<polyline id="corner-bottom-left" class="st1" points="90,560 40,560 40,510 "/>
+<polyline id="corner-bottom-right" class="st1" points="710,560 760,560 760,510 "/>
+<polyline id="corner-top-left" class="st1" points="90,40 40,40 40,90 "/>
+<polyline id="corner-top-right" class="st1" points="710,40 760,40 760,90 "/>
+<path id="frame-ellipse" class="st1" d="M515.6,300c0,63.8-51.7,115.6-115.6,115.6c-38.6,0-72.7-18.9-93.7-48
+	c-13.7-19-21.8-42.4-21.8-67.6c0-63.8,51.7-115.6,115.6-115.6S515.6,236.2,515.6,300z"/>
+<polyline id="mountain-a" class="st1" points="306.3,367.6 344.4,325 435.2,410.1 "/>
+<polyline id="mountain-b" class="st1" points="320,383.4 435.3,267.5 510.4,334.3 "/>
+<ellipse id="sun" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -98.6442 315.2951)" class="st1" cx="331.3" cy="276.7" rx="15.9" ry="15.9"/>
+<path id="land" class="st1" d="M346.6,402.5c32.2-35,113.5-50.1,149.1-37.7"/>
+</svg>

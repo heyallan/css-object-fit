@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Object-fit Property</title>
+    <link rel="stylesheet" href="./css/reset.min.css">
+    <link rel="stylesheet" href="./css/grid.min.css">
+    <link rel="stylesheet" href="./css/properties.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+  </head>
+  <body>
+
+  <div class="container">
+
+    <header class="margin-top-4 margin-bottom-4">
+      <h1>CSS Object-fit Property</h1>
+      <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit">
+        <p>The object-fit CSS property sets how the content of a replaced element, such as an <code>img</code> or <code>video</code>, should be resized to fit its container.</p>
+        <cite><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit">CSS Object-fit property </a></cite> from Mozilla MDN.
+      </blockquote>
+    </header>
+
+    <section class="margin-bottom-4">
+      <h2 id="usage">Usage</h2>
+      <p>Create a container element with a predetermined size or aspect ratio, put the image inside the container, then use <code>object-fit</code> to adjust the image to the container.</p>
+    </section>
+
+    <section class="margin-bottom-4">
+      <h2>img[src="photo.jpg"]</h2>
+      <div class="row">
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p><code>.object-fit-fill</code></p>
+          <div class="border-solid margin-bottom-1" style="--aspect-ratio: 1/1;">
+            <img class="object-fit-fill" src="./img/photograph.jpg" alt="image">
+          </div><!-- aspact-ratio -->
+        </div><!-- /.col -->
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p><code>.object-fit-contain</code></p>
+          <div class="border-solid margin-bottom-1" style="--aspect-ratio:1/1;">
+            <img class="object-fit-contain" src="./img/photograph.jpg" alt="image">
+          </div>
+        </div><!-- /.col -->
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p><code>.object-fit-cover</code></p>
+          <div class="border-solid margin-bottom-1" style="--aspect-ratio: 1/1">
+            <img class="object-fit-cover" src="./img/photograph.jpg" alt="image">
+          </div>
+        </div><!-- /.col -->
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p><code>.object-fit-scale-down</code></p>
+          <div class="border-solid margin-bottom-1" style="--aspect-ratio: 1/1">
+            <img class="object-fit-scale-down" src="./img/photograph.jpg" alt="image">
+          </div>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </section>
+
+    <section class="margin-bottom-4">
+      <h2>img[src="vector.svg"]</h2>
+      <div class="row">
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p><code>.object-fit-fill</code></p>
+          <div class="border-solid margin-bottom-1" style="--aspect-ratio: 1/1;">
+            <img class="object-fit-fill" src="./img/vector-landscape-none.svg" alt="svg image">
+          </div><!-- aspact-ratio -->
+          <p>☝️ Requires <code>preserveAspectRatio="none"</code></p>
+        </div><!-- /.col -->
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p><code>.object-fit-contain</code></p>
+          <div class="border-solid margin-bottom-1" style="--aspect-ratio: 1/1;">
+            <img class="object-fit-contain" src="./img/vector-landscape-small.svg" alt="svg image">
+          </div><!-- aspact-ratio -->
+        </div><!-- /.col -->
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p><code>.object-fit-cover</code></p>
+          <div class="border-solid margin-bottom-1" style="--aspect-ratio: 1/1;">
+            <img class="object-fit-cover" src="./img/vector-landscape-small.svg" alt="svg image">
+          </div><!-- aspact-ratio -->
+        </div><!-- /.col -->
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p><code>.object-fit-scale-down</code></p>
+          <div class="border-solid margin-bottom-1" style="--aspect-ratio: 1/1;">
+            <img class="object-fit-scale-down" src="./img/vector-landscape-small.svg" alt="svg image">
+          </div><!-- aspact-ratio -->
+          <p>☝️ Chrome will force intrinsic <code>img</code> element height (150px) regardless of svg height</p>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </section>
+
+    <section class="margin-bottom-4">
+      <h2>picture > source[srcset="svg"]</h2>
+      <div class="row">
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p><code>.object-fit-fill</code></p>
+          <picture class="border-solid margin-bottom-1" style="--aspect-ratio: 1/1;">
+            <source srcset="./img/small.svg" media="(max-width: 767px)">
+            <source srcset="./img/medium.svg" media="(min-width: 768px) and (max-width: 1023px)">
+            <source srcset="./img/large.svg" media="(min-width: 1024px)">
+            <img class="object-fit-fill" src="./img/large.svg" alt="image">
+          </picture>
+          <p>☝️ Requires <code>preserveAspectRatio="none"</code></p>
+        </div><!-- /.col -->
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p><code>.object-fit-contain</code></p>
+          <picture class="border-solid margin-bottom-1" style="--aspect-ratio: 1/1;">
+            <source srcset="./img/small.svg" media="(max-width: 767px)">
+            <source srcset="./img/medium.svg" media="(min-width: 768px) and (max-width: 1023px)">
+            <source srcset="./img/large.svg" media="(min-width: 1024px)">
+            <img class="object-fit-contain" src="./img/large.svg" alt="image">
+          </picture>
+        </div><!-- /.col -->
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p><code>.object-fit-cover</code></p>
+          <picture class="border-solid margin-bottom-1" style="--aspect-ratio: 1/1;">
+            <source srcset="./img/small.svg" media="(max-width: 767px)">
+            <source srcset="./img/medium.svg" media="(min-width: 768px) and (max-width: 1023px)">
+            <source srcset="./img/large.svg" media="(min-width: 1024px)">
+            <img class="object-fit-cover" src="./img/large.svg" alt="image">
+          </picture>
+        </div><!-- /.col -->
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p><code>.object-fit-scale-down</code></p>
+          <picture class="border-solid margin-bottom-1" style="--aspect-ratio: 1/1">
+            <source srcset="./img/small.svg" media="(max-width: 767px)">
+            <source srcset="./img/medium.svg" media="(min-width: 768px) and (max-width: 1023px)">
+            <source srcset="./img/large.svg" media="(min-width: 1024px)">
+            <img class="object-fit-scale-down" src="./img/large.svg" alt="image">
+          </picture>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </section>
+
+    <section class="margin-bottom-4">
+      <h2>svg > image (no CSS)</h2>
+      <p><code>svg[preserveAspectRatio="<i>&lt;value&gt;</i>"]</code></p>
+      <div class="row">
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p><code>none</code></p>
+          <div class="border-solid margin-bottom-1" style="--aspect-ratio: 1/1;">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1170 600" preserveAspectRatio="none" aria-labelledby="title" aria-role="img">
+              <title id="title">Cropped image example</title>
+              <image xlink:href="./img/photograph.jpg" x="0" y="0" width="100%" height="100%"></image>
+            </svg>
+          </div><!-- aspact-ratio -->
+        </div><!-- /.col -->
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p><code>xMidYMid meet</code></p>
+          <div class="border-solid margin-bottom-1" style="--aspect-ratio: 1/1;">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1170 600" preserveAspectRatio="xMidYMid meet" aria-labelledby="title" aria-role="img">
+              <title id="title">Cropped image example</title>
+              <image xlink:href="./img/photograph.jpg" x="0" y="0" width="100%" height="100%"></image>
+            </svg>
+          </div><!-- aspact-ratio -->
+        </div><!-- /.col -->
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p><code>xMidYMid slice</code></p>
+          <div class="border-solid margin-bottom-1" style="--aspect-ratio: 1/1;">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1170 600" preserveAspectRatio="xMidYMid slice" aria-labelledby="title" aria-role="img">
+              <title id="title">Cropped image example</title>
+              <image xlink:href="./img/photograph.jpg" x="0" y="0" width="100%" height="100%"></image>
+            </svg>
+          </div><!-- aspact-ratio -->
+        </div><!-- /.col -->
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p><code>?</code></p>
+          <div class="border-solid margin-bottom-1" style="--aspect-ratio: 1/1;">
+            <div class="padding-1">
+              Equivalent of scale-down ?
+            </div>
+          </div><!-- aspact-ratio -->
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </section>
+
+    <section class="margin-bottom-4">
+      <h2>svg (inline)</h2>
+      <p><code>svg[preserveAspectRatio="<i>&lt;value&gt;</i>"]</code></p>
+      <div class="row">
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p><code>none</code></p>
+          <div class="border-solid margin-bottom-1" style="--aspect-ratio: 1/1;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="none">
+              <rect fill="#F6F6F9" width="800" height="600"/>
+              <path fill="#C0C0C9" d="M480.8,219.2v161.6H319V219.2H480.8z M464.5,364.5v-129h-129v129H464.5z"/>
+              <path fill="#C0C0C9" d="M450.5,340.3c-33.7,0-67.2,0-100.9,0c6.7-13.4,13.4-26.8,20.1-40.2 c6.7,6.7,13.3,13.4,20.1,20.3c10.3-13.7,20.3-27.1,30.5-40.6C430.3,300,440.4,320.1,450.5,340.3z"/>
+              <circle fill="#C0C0C9" cx="380" cy="270" r="11"/>
+              <text transform="matrix(1 0 0 1 50 550)" fill="#C0C0C9" font-size="30px">(none)</text>
+            </svg>
+          </div><!-- aspact-ratio -->
+        </div><!-- /.col -->
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p><code>xMidYMid meet</code></p>
+          <div class="border-solid margin-bottom-1" style="--aspect-ratio: 1/1;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid meet">
+              <rect fill="#F6F6F9" width="800" height="600"/>
+              <path fill="#C0C0C9" d="M480.8,219.2v161.6H319V219.2H480.8z M464.5,364.5v-129h-129v129H464.5z"/>
+              <path fill="#C0C0C9" d="M450.5,340.3c-33.7,0-67.2,0-100.9,0c6.7-13.4,13.4-26.8,20.1-40.2 c6.7,6.7,13.3,13.4,20.1,20.3c10.3-13.7,20.3-27.1,30.5-40.6C430.3,300,440.4,320.1,450.5,340.3z"/>
+              <circle fill="#C0C0C9" cx="380" cy="270" r="11"/>
+              <text transform="matrix(1 0 0 1 50 550)" fill="#C0C0C9" font-size="30px">(xMidYMid meet)</text>
+            </svg>
+          </div><!-- aspact-ratio -->
+        </div><!-- /.col -->
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p><code>xMidYMid slice</code></p>
+          <div class="border-solid margin-bottom-1" style="--aspect-ratio: 1/1;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+              <rect fill="#F6F6F9" width="800" height="600"/>
+              <path fill="#C0C0C9" d="M480.8,219.2v161.6H319V219.2H480.8z M464.5,364.5v-129h-129v129H464.5z"/>
+              <path fill="#C0C0C9" d="M450.5,340.3c-33.7,0-67.2,0-100.9,0c6.7-13.4,13.4-26.8,20.1-40.2 c6.7,6.7,13.3,13.4,20.1,20.3c10.3-13.7,20.3-27.1,30.5-40.6C430.3,300,440.4,320.1,450.5,340.3z"/>
+              <circle fill="#C0C0C9" cx="380" cy="270" r="11"/>
+              <text transform="matrix(1 0 0 1 50 550)" fill="#C0C0C9" font-size="30px">(xMidYMid slice)</text>
+            </svg>
+          </div><!-- aspact-ratio -->
+        </div><!-- /.col -->
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p><code>?</code></p>
+          <div class="border-solid margin-bottom-1" style="--aspect-ratio: 1/1;">
+            <div class="padding-1">
+              Equivalent of scale-down ?
+            </div>
+          </div><!-- aspact-ratio -->
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </section>
+
+    <section class="margin-bottom-4">
+      <h2>video</h2>
+      <div class="row">
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p><code>.object-fit-fill</code></p>
+          <div class="border-solid margin-bottom-1" style="--aspect-ratio: 1/1;">
+            <video class="object-fit-fill" src="./img/video.mp4" controls="true" poster="./img/poster.jpg"></video>
+          </div><!-- aspact-ratio -->
+        </div><!-- /.col -->
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p><code>.object-fit-contain</code></p>
+          <div class="border-solid margin-bottom-1" style="--aspect-ratio: 1/1;">
+            <video class="object-fit-contain" src="./img/video.mp4" controls="true" poster="./img/poster.jpg"></video>
+          </div><!-- aspact-ratio -->
+        </div><!-- /.col -->
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p><code>.object-fit-cover</code></p>
+          <div class="border-solid margin-bottom-1" style="--aspect-ratio: 1/1;">
+            <video class="object-fit-cover" src="./img/video.mp4" controls="true" poster="./img/poster.jpg"></video>
+          </div><!-- aspact-ratio -->
+        </div><!-- /.col -->
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p><code>.object-fit-scale-down</code></p>
+          <div class="border-solid margin-bottom-1" style="--aspect-ratio: 1/1;">
+            <video class="object-fit-scale-down" src="./img/video.mp4" controls="true" poster="./img/poster.jpg"></video>
+          </div><!-- aspact-ratio -->
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </section>
+
+    <section class="margin-bottom-4">
+      <h2>iframe</h2>
+      <div class="row">
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p><code>.object-fit-fill</code></p>
+          <div class="border-solid margin-bottom-1" style="--aspect-ratio: 1/1;">
+            <iframe class="object-fit-fill" src="https://www.youtube.com/embed/zxT0wknZxic" width="550" height="350"></iframe>
+          </div><!-- aspact-ratio -->
+        </div><!-- /.col -->
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p><code>.object-fit-contain</code></p>
+          <div class="border-solid margin-bottom-1" style="--aspect-ratio: 1/1;">
+            <iframe class="object-fit-contain" src="https://www.youtube.com/embed/zxT0wknZxic" width="550" height="350"></iframe>
+          </div><!-- aspact-ratio -->
+        </div><!-- /.col -->
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p><code>.object-fit-cover</code></p>
+          <div class="border-solid margin-bottom-1" style="--aspect-ratio: 1/1;">
+            <iframe class="object-fit-cover" src="https://www.youtube.com/embed/zxT0wknZxic" width="550" height="350"></iframe>
+          </div><!-- aspact-ratio -->
+        </div><!-- /.col -->
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p><code>.object-fit-scale-down</code></p>
+          <div class="border-solid margin-bottom-1" style="--aspect-ratio: 1/1;">
+            <iframe class="object-fit-scale-down" src="https://www.youtube.com/embed/zxT0wknZxic" width="550" height="350"></iframe>
+          </div><!-- aspact-ratio -->
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </section>
+
+    <section class="margin-bottom-4">
+      <h2>embed</h2>
+      <div class="row">
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p><code>.object-fit-fill</code></p>
+          <div class="border-solid margin-bottom-1" style="--aspect-ratio: 1/1;">
+            <embed class="object-fit-fill" width="550" height="350" src="https://www.youtube.com/embed/zxT0wknZxic">
+          </div><!-- aspact-ratio -->
+        </div><!-- /.col -->
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p><code>.object-fit-contain</code></p>
+          <div class="border-solid margin-bottom-1" style="--aspect-ratio: 1/1;">
+            <embed class="object-fit-contain" width="550" height="350" src="https://www.youtube.com/embed/zxT0wknZxic">
+          </div><!-- aspact-ratio -->
+        </div><!-- /.col -->
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p><code>.object-fit-cover</code></p>
+          <div class="border-solid margin-bottom-1" style="--aspect-ratio: 1/1;">
+            <embed class="object-fit-cover" width="550" height="350" src="https://www.youtube.com/embed/zxT0wknZxic">
+          </div><!-- aspact-ratio -->
+        </div><!-- /.col -->
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p><code>.object-fit-scale-down</code></p>
+          <div class="border-solid margin-bottom-1" style="--aspect-ratio: 1/1;">
+            <embed class="object-fit-scale-down" width="550" height="350" src="https://www.youtube.com/embed/zxT0wknZxic">
+          </div><!-- aspact-ratio -->
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </section>
+
+  </div><!-- /.container -->
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

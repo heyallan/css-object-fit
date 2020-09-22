@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="landscape" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 800 600" enable-background="new 0 0 800 600" xml:space="preserve">
+<rect id="background" x="5" y="5" fill="#F6F6F9" width="790" height="590"/>
+<rect id="frame-rectangle" x="5" y="5" fill="none" stroke="#C0C0C8" stroke-width="10" stroke-miterlimit="10" width="790" height="590"/>
+<polyline id="corner-bottom-left" fill="none" stroke="#C0C0C8" stroke-width="10" stroke-miterlimit="10" points="90,560 40,560
+	40,510 "/>
+<polyline id="corner-bottom-right" fill="none" stroke="#C0C0C8" stroke-width="10" stroke-miterlimit="10" points="710,560
+	760,560 760,510 "/>
+<polyline id="corner-top-left" fill="none" stroke="#C0C0C8" stroke-width="10" stroke-miterlimit="10" points="90,40 40,40 40,90
+	"/>
+<polyline id="corner-top-right" fill="none" stroke="#C0C0C8" stroke-width="10" stroke-miterlimit="10" points="710,40 760,40
+	760,90 "/>
+<text transform="matrix(1 0 0 1 291.6331 413.4229)" fill="#C0C0C8" font-family="'Roboto-Bold'" font-size="70px">LARGE</text>
+<circle fill="#C0C0C8" cx="400" cy="302" r="7.5"/>
+<rect x="300" y="197.5" fill="none" stroke="#C0C0C8" stroke-width="10" stroke-linejoin="round" stroke-miterlimit="10" width="200" height="125"/>
+</svg>

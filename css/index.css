@@ -1,0 +1,12 @@
+.border-dashed {
+  border: 2px dashed lightgray;
+}
+
+.border-solid {
+  border: 2px solid var(--color-primary);
+  background-image:
+    linear-gradient(45deg, #eeeef2 25%, transparent 25%, transparent 75%, #eeeef2 75%, #eeeef2),
+    linear-gradient(45deg, #eeeef2 25%, transparent 25%, transparent 75%, #eeeef2 75%, #eeeef2);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}

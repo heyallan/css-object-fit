@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="landscape" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 800 600" enable-background="new 0 0 800 600" xml:space="preserve">
+<g id="frame">
+	<rect x="5" y="5" fill="#F6F6F9" width="790" height="590"/>
+	<path fill="#C0C0C8" d="M790,10v580H10V10H790 M800,0H0v600h800V0L800,0z"/>
+</g>
+<g id="mountain-b">
+	<polygon fill="#F6F6F9" points="81,595 500.2,173.9 795,436.2 795,595 	"/>
+	<path fill="#C0C0C8" d="M500.4,180.8L790,438.5V590H93.1L500.4,180.8 M500,167L69,600h731V434L500,167L500,167z"/>
+</g>
+<g id="mountain-a">
+	<polygon fill="#F6F6F9" points="11.2,595 242.3,337.1 517.4,595 	"/>
+	<path fill="#C0C0C8" d="M242.6,344.3L504.7,590H22.4L242.6,344.3 M242,330L0,600h530L242,330L242,330z"/>
+</g>
+<g id="sun">
+	<circle fill="#F6F6F9" cx="205" cy="200" r="45"/>
+	<path fill="#C0C0C8" d="M205,160c22.1,0,40,17.9,40,40s-17.9,40-40,40s-40-17.9-40-40S182.9,160,205,160 M205,150
+		c-27.6,0-50,22.4-50,50s22.4,50,50,50s50-22.4,50-50S232.6,150,205,150L205,150z"/>
+</g>
+<g id="land">
+	<path fill="#F6F6F9" d="M185.2,595c79.3-50.1,236.5-145.4,464.5-145.4c47.6,0,96.5,4.3,145.3,12.6V595H185.2z"/>
+	<g>
+		<path fill="#C0C0C8" d="M649.7,454.6c46,0,93.2,4,140.3,11.9V590H202.6C285.4,538.5,436.5,454.6,649.7,454.6L649.7,454.6
+			 M649.7,444.6C405.2,444.6,240.9,554,168,600h632V458C747,448.6,696.8,444.6,649.7,444.6L649.7,444.6z"/>
+	</g>
+</g>
+<polyline fill="none" stroke="#C0C0C8" stroke-width="9.8044" stroke-miterlimit="10" points="90,560 40,560 40,510 "/>
+<polyline fill="none" stroke="#C0C0C8" stroke-width="9.8044" stroke-miterlimit="10" points="710,560 760,560 760,510 "/>
+<polyline fill="none" stroke="#C0C0C8" stroke-width="9.8044" stroke-miterlimit="10" points="90,40 40,40 40,90 "/>
+<polyline fill="none" stroke="#C0C0C8" stroke-width="9.8044" stroke-miterlimit="10" points="710,40 760,40 760,90 "/>
+<path fill="#F6F6F9" stroke="#C0C0C8" stroke-width="9.8044" stroke-miterlimit="10" d="M90,560"/>
+<path fill="#F6F6F9" stroke="#C0C0C8" stroke-width="9.8044" stroke-miterlimit="10" d="M40,510"/>
+<line fill="none" stroke="#C0C0C8" stroke-width="11.8322" stroke-miterlimit="10" x1="400" y1="265" x2="400" y2="335"/>
+<line fill="none" stroke="#C0C0C8" stroke-width="11.8322" stroke-miterlimit="10" x1="435" y1="300" x2="365" y2="300"/>
+</svg>

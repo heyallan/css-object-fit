@@ -1,2 +1,3 @@
-# css-object-fit
-CSS object-fit property
+# CSS object-fit
+
+> CSS object-fit property
